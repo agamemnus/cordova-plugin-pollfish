@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.flyingsoftgames.pollfishplugin" version="0.1.0">
+ <name>Pollfish Javascript API</name>
+ <description>Control the Android Pollfish SDK from a Javascript function.</description>
+ <author>Michael Romanovsky</author>
+ <license>MIT (see readme.md)</license>
+ <keywords>cordova,phonegap,pollfish,pollfish plugin,polls,poll,google,play,google play,android,agamemnus,flyingsoftgames</keywords>
+ <engines><engine name="cordova" version=">=3.0.0" /></engines>
+ 
+ <js-module src="www/pollfishplugin.js" name="PollfishPlugin"><clobbers target="window.plugins.PollfishPlugin"/></js-module>
+ <platform name="android">
+  <config-file target="res/xml/config.xml" parent="/*">
+   <feature name="PollfishPlugin">
+    <param name="android-package" value="com.flyingsoftgames.pollfishplugin.PollfishPlugin"/>
+   </feature>
+  </config-file>
+  <dependency id="com.google.playservices" />
+  <source-file src="src/android/PollfishPlugin.java" target-dir="src/com/flyingsoftgames/pollfishplugin" />
+  <config-file target="AndroidManifest.xml" parent="/manifest">
+   <uses-permission android:name="android.permission.INTERNET" />
+  </config-file>
+ </platform>
+</plugin>
