@@ -8,6 +8,7 @@ Donations!
 ----------------------
 Please feed Tiny Tim.
 Paypal: agamemnus at flyingsoftgames dot com
+<br/>
 Gittip / Gratipay: https://gratipay.com/agamemnus/
 
 Install
