@@ -7,6 +7,7 @@ Implement the Pollfish API with this plugin.
 Donations!
 ----------------------
 Please feed Tiny Tim.
+<br/>
 Paypal: agamemnus at flyingsoftgames dot com
 <br/>
 Gittip / Gratipay: https://gratipay.com/agamemnus/
