@@ -14,7 +14,7 @@
     <param name="android-package" value="com.flyingsoftgames.pollfishplugin.PollfishPlugin"/>
    </feature>
   </config-file>
-  <dependency id="com.google.playservices" />
+  <dependency id="cordova-plugin-googleplayservices" />
   <source-file src="src/android/PollfishPlugin.java" target-dir="src/com/flyingsoftgames/pollfishplugin" />
   <config-file target="AndroidManifest.xml" parent="/manifest">
    <uses-permission android:name="android.permission.INTERNET" />
